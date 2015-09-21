@@ -1,5 +1,12 @@
 var express = require('express');
 var mongoose = require('mongoose');
+var passport = require('passport');
+// registering models with the global mongoose object
+require('./models/Restaurants');
+require('./models/Schedules');
+require('./models/Users');
+require('./config/passport');
+
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -10,6 +17,11 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+
+// include models
+require('./models/Posts');
+require('./models/Restaurants');
+require('./models/Schedules');
 
 // open a connection with the food database running on Mongo server
 mongoose.connect('mongodb://localhost/food');
@@ -25,6 +37,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(passport.initialize());
 
 app.use('/', routes);
 app.use('/users', users);
