@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var ScheduleSchema = new mongoose.Schema({
-  date: { type: Date, default: new Date() },
+  date: Date,
   timeofday: Number,
   user_id: Number,
   restaurant_id: Number

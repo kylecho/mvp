@@ -18,11 +18,6 @@ var users = require('./routes/users');
 
 var app = express();
 
-// include models
-require('./models/Posts');
-require('./models/Restaurants');
-require('./models/Schedules');
-
 // open a connection with the food database running on Mongo server
 mongoose.connect('mongodb://localhost/food');
 
