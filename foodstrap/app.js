@@ -17,7 +17,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-
+// app.get('*', function (req, res) {
+//     res.sendFile(__dirname, '/views/index.ejs');
+// });
 // open a connection with the food database running on Mongo server
 mongoose.connect('mongodb://localhost/food');
 
