@@ -1,0 +1,24 @@
+<div id='schedule'>
+  <div class="selection">
+    <div style="text-align:center" id="quote"><h2>"The More You Eat...★"</h2><div>
+    <div ng-controller="SchedulesController">
+    <img src="http://cdn.playbuzz.com/cdn/da83c48d-a8fc-4b1a-a586-dfc649d9c643/d7f0e1cb-59fb-42bd-ae80-e0381d5a29d8.gif">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Lunch</th>
+        <th>Dinner</th>
+        <th>Night</th>
+        <th>Date</th>
+      </tr>
+      <tr ng-repeat="user in data.schedules">
+        <td>{{user.name}}</td>
+        <td>{{user.lunch}}</td>
+        <td>{{user.dinner}}</td>
+        <td>{{user.night}}</td>
+        <td>{{user.date}}</td>
+      </tr>
+    </table>
+    </div>
+  </div>
+</div>

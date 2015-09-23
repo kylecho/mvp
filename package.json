@@ -1,0 +1,16 @@
+{
+  "name": "foodstrap",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5",
+    "mongoose": "^4.1.0",
+    "morgan": "^1.1.1",
+    "q": "^1.0.1",
+    "request": "^2.36.0"
+  }
+}

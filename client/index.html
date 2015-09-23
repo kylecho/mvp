@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='foodstrap'>
+  <head>
+    <meta charset="utf-8" />
+    <title>Foodstrap</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ng-table/dist/ng-table.min.css" />
+  </head>
+  <body>
+    <div class="page-header">
+      <div id="title"><h2>Foodstrap</h2></div>
+    </div>
+
+    <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
+    <div ng-view></div>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/ng-table/dist/ng-table.js"></script>
+
+    <script src="app/main/main.js"></script>
+    <script src="app/schedules/schedules.js"></script>
+    <script src="app/services/services.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>

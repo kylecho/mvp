@@ -1,0 +1,87 @@
+<div id='main'>
+  <div class="foodselect">
+    <form ng-submit="addSchedules()" ng-controller="MainController">
+
+    <div id="username">
+      <label for="exampleInput">What's your name?</label>
+      <input type="text" class="name-input" id="name" name="input" ng-model="data.name"
+        placeholder="Your name goes here!" required />
+    </div>
+
+    <div id="lunch">
+      <h2>Lunch</h2>
+      <label>
+        <input type="radio" name="lunch" ng-model="data.lunch" value="The Westfield Mall">
+        The Westfield Mall
+      </label><br/>
+      <label>
+        <input type="radio" name="lunch" ng-model="data.lunch" value="Little Delhi">
+        Little Delhi
+      </label><br/>
+      <label>
+        <input type="radio" name="lunch" ng-model="data.lunch" value="Farmerbrown">
+        Farmerbrown
+      </label><br/>
+      <label>
+        <input type="radio" name="lunch" ng-model="data.lunch" value="Tu Lan">
+        Tu Lan
+      </label><br/>
+      <label>
+        <input type="radio" name="lunch" ng-model="data.lunch" value="Taqueria Cancún">
+        Taqueria Cancún
+      </label><br/>
+      <label>
+        <input type="radio" name="lunch" ng-model="data.lunch" value="The Hall">
+        The Hall
+      </label><br/>
+      <label>
+        <input type="radio" name="lunch" ng-model="data.lunch" value="I brought food.">
+        I brought food.
+      </label><br/>
+    </div>
+
+    <div id="dinner">
+      <h2>Dinner</h2>
+      <label>
+        <input type="radio" name="dinner" ng-model="data.dinner" value="The Westfield Mall">
+        The Westfield Mall
+      </label><br/>
+      <label>
+        <input type="radio" name="dinner" ng-model="data.dinner" value="Little Delhi">
+        Little Delhi
+      </label><br/>
+      <label>
+        <input type="radio" name="dinner" ng-model="data.dinner" value="Farmerbrown">
+        Farmerbrown
+      </label><br/>
+      <label>
+        <input type="radio" name="dinner" ng-model="data.dinner" value="Tu Lan">
+        Tu Lan
+      </label><br/>
+      <label>
+        <input type="radio" name="dinner" ng-model="data.dinner" value="Taqueria Cancún">
+        Taqueria Cancún
+      </label><br/>
+      <label>
+        <input type="radio" name="dinner" ng-model="data.dinner" value="The Hall">
+        The Hall
+      </label><br/>
+      <label>
+        <input type="radio" name="dinner" ng-model="data.dinner" value="I brought food.">
+        I brought food.
+      </label><br/>
+    </div>
+    <div id="night">
+      <h2>Night</h2>
+      <label>
+        <input type="radio" name="night" ng-model="data.night" value="Tempest">
+        Tempest
+      </label><br/>
+    </div>
+
+    <div id="button-container">
+      <input type="submit" id="ready-button" value="I'm ready to eat! :)" />
+    </div>
+    </form>
+  </div>
+</div>
